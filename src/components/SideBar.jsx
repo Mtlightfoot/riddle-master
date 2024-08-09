@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../styles.css'
+import StartButton from './StartButton'
 
 function SideBar() {
+
     return (
         <div className='hidden lg:flex'>
             <aside id='sideBar' className="flex flex-col items-center h-screen sticky top-0 overflow-y-auto space-y-4 w-96 py-6 px-4 bg-base-200">
@@ -26,7 +28,9 @@ function SideBar() {
                 </div>
 
             </aside>
-            <aside id='mainPage' className='flex flex-col items-center h-screen sticky top-0 overflow-y-auto space-y-4 w-full py-6 px-4 bg-base-200'></aside>
+            <aside id='mainPage' className='flex flex-col items-center h-screen sticky top-0 overflow-y-auto space-y-4 w-full py-6 px-4 bg-base-200'>
+                <StartButton />
+            </aside>
         </div>
     )
 }
